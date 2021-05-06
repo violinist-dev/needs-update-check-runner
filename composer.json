@@ -19,8 +19,7 @@
     "symfony/dependency-injection": "^3.3",
     "symfony/dotenv": "^3.3",
     "symfony/cache": "^3.3",
-    "symfony/process": "^3.3",
-    "composer/composer": "^1"
+    "symfony/process": "^3.3"
   },
   "scripts": {
     "test": "./vendor/bin/phpunit"
