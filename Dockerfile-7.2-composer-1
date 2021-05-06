@@ -1,0 +1,10 @@
+FROM violinist/update-check-runner:7.2-multi-composer-1
+MAINTAINER eiriksm <eirik@morland.no>
+
+COPY . /usr/src/myapp
+WORKDIR /usr/src/myapp
+
+RUN composer require composer/composer:^1 --update-with-dependencies \
+    && composer install --no-dev --optimize-autoloader
+
+CMD ["php", "runner.php"]
