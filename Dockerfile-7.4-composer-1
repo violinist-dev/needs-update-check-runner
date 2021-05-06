@@ -1,4 +1,4 @@
-FROM violinist/update-check-runner:7.4-multi-composer-1
+FROM violinist/php-base:7.4-multi
 MAINTAINER eiriksm <eirik@morland.no>
 
 COPY . /usr/src/myapp
