@@ -2212,16 +2212,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/violinist-dev/composer-cached-remote-filesystem.git",
-                "reference": "ca0212c3566b4fffa424dc179eda9ccb54510d61"
+                "reference": "c7f97fb7f93709e2c86029ab24af68df8829c7b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/violinist-dev/composer-cached-remote-filesystem/zipball/ca0212c3566b4fffa424dc179eda9ccb54510d61",
-                "reference": "ca0212c3566b4fffa424dc179eda9ccb54510d61",
+                "url": "https://api.github.com/repos/violinist-dev/composer-cached-remote-filesystem/zipball/c7f97fb7f93709e2c86029ab24af68df8829c7b6",
+                "reference": "c7f97fb7f93709e2c86029ab24af68df8829c7b6",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.1",
+                "composer-plugin-api": "^1.1 || ^2",
                 "symfony/cache": "^3.4"
             },
             "require-dev": {
@@ -2247,7 +2247,7 @@
                 }
             ],
             "description": "Wrap the remote filesystem with a cache",
-            "time": "2018-12-28T23:11:38+00:00"
+            "time": "2021-05-09T13:50:12+00:00"
         },
         {
             "name": "violinist-dev/provider-factory",
