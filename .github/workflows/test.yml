@@ -30,7 +30,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Build the docker image
-        run: docker build -t update-check-runner . -f Dockerfile-${{ matrix.php-version }}-composer-${{ matrix.composer-version }}
+        run: docker build -t needs-update-check-runner . -f Dockerfile-${{ matrix.php-version }}-composer-${{ matrix.composer-version }}
 
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
