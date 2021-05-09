@@ -6,7 +6,7 @@ use PHPUnit\Framework\TestCase;
 use Symfony\Component\Dotenv\Dotenv;
 use Symfony\Component\Process\Process;
 
-class IntegrationTest extends TestCase {
+class CachedRemoteFileSystemTest extends TestCase {
 
     public function setUp()
     {
@@ -32,7 +32,7 @@ class IntegrationTest extends TestCase {
     protected function runContainerWithComposerShow($our_dir) {
         $process = new Process(sprintf(
             'docker run --rm -v %s:/tmp/symfony-cache needs-update-check-runner /usr/src/myapp/vendor/bin/composer show psr/cache -a -vvv',
-            $our_dir,
+            $our_dir
         ), null, null, null, 600);
         $process->run();
         if ($process->getExitCode()) {
