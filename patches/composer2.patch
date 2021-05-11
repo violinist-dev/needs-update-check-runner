@@ -1,7 +1,7 @@
-diff --git a/src/Composer/Factory.php b/src/Composer/Factory.php
+diff --git a/vendor/composer/composer/src/Composer/Factory.php b/vendor/composer/composer/src/Composer/Factory.php
 index cd6662c30..bb58e9dc1 100644
---- a/src/Composer/Factory.php
-+++ b/src/Composer/Factory.php
+--- a/vendor/composer/composer/src/Composer/Factory.php
++++ b/vendor/composer/composer/src/Composer/Factory.php
 @@ -38,6 +38,7 @@
  use Composer\Package\Version\VersionParser;
  use Composer\Downloader\TransportException;
