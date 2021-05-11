@@ -1,0 +1,20 @@
+diff --git a/vendor/composer/composer/src/Composer/Factory.php b/vendor/composer/composer/src/Composer/Factory.php
+index cd6662c30..bb58e9dc1 100644
+--- a/vendor/composer/composer/src/Composer/Factory.php
++++ b/vendor/composer/composer/src/Composer/Factory.php
+@@ -38,6 +38,7 @@
+ use Composer\Package\Version\VersionParser;
+ use Composer\Downloader\TransportException;
+ use Seld\JsonLint\JsonParser;
++use Violinist\CachedRemoteFilesystem\CachedDownloader;
+ 
+ /**
+  * Creates a configured instance of composer.
+@@ -633,6 +634,7 @@ public static function createHttpDownloader(IOInterface $io, Config $config, $op
+         }
+         try {
+             $httpDownloader = new HttpDownloader($io, $config, $httpDownloaderOptions, $disableTls);
++            $httpDownloader = new CachedDownloader($io, $config, $httpDownloaderOptions, $disableTls);
+         } catch (TransportException $e) {
+             if (false !== strpos($e->getMessage(), 'cafile')) {
+                 $io->write('<error>Unable to locate a valid CA certificate file. You must set a valid \'cafile\' option.</error>');
