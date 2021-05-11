@@ -2212,12 +2212,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/violinist-dev/composer-cached-remote-filesystem.git",
-                "reference": "c7f97fb7f93709e2c86029ab24af68df8829c7b6"
+                "reference": "8c65b905e5f0f245179f27b3fb925198ba5f1511"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/violinist-dev/composer-cached-remote-filesystem/zipball/c7f97fb7f93709e2c86029ab24af68df8829c7b6",
-                "reference": "c7f97fb7f93709e2c86029ab24af68df8829c7b6",
+                "url": "https://api.github.com/repos/violinist-dev/composer-cached-remote-filesystem/zipball/8c65b905e5f0f245179f27b3fb925198ba5f1511",
+                "reference": "8c65b905e5f0f245179f27b3fb925198ba5f1511",
                 "shasum": ""
             },
             "require": {
@@ -2227,6 +2227,7 @@
             "require-dev": {
                 "composer/composer": "dev-master"
             },
+            "default-branch": true,
             "type": "composer-plugin",
             "extra": {
                 "class": "Violinist\\CachedRemoteFilesystem\\EventSubscriber"
@@ -2247,7 +2248,11 @@
                 }
             ],
             "description": "Wrap the remote filesystem with a cache",
-            "time": "2021-05-09T13:50:12+00:00"
+            "support": {
+                "issues": "https://github.com/violinist-dev/composer-cached-remote-filesystem/issues",
+                "source": "https://github.com/violinist-dev/composer-cached-remote-filesystem/tree/master"
+            },
+            "time": "2021-05-11T05:48:27+00:00"
         },
         {
             "name": "violinist-dev/provider-factory",
@@ -4105,5 +4110,5 @@
     "platform-overrides": {
         "php": "7.0.9"
     },
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.0.0"
 }
