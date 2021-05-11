@@ -5,6 +5,8 @@ COPY . /usr/src/myapp
 WORKDIR /usr/src/myapp
 
 RUN composer require composer/composer:^2 --update-with-dependencies \
-    && composer install --no-dev --optimize-autoloader
+    && composer install --no-dev --optimize-autoloader \
+    && patch -p1 < patches/composer2.patch \
+    && rm -rf /usr/local/bin/composer
 
 CMD ["php", "runner.php"]
