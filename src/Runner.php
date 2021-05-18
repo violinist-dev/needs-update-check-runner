@@ -239,6 +239,9 @@ class Runner
             "show",
             $package,
             "--all",
+            "--no-ansi",
+            "--no-interaction",
+            "--no-plugins",
             "-d",
             $directory,
         ], NULL, [

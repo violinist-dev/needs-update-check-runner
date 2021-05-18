@@ -35,18 +35,30 @@ catch (Throwable $e) {
 }
 
 $update_check_data = NULL;
-
+$output = [];
 try {
-    $update_check_data = @unserialize($_SERVER['update_check_data']);
+    $update_check_data = @unserialize(@json_decode($_SERVER['update_check_data']));
     assert($update_check_data instanceof \Violinist\UpdateCheckData\UpdateCheckData);
 } catch (Throwable $e) {
+    $output[] = [
+        'timestamp' => date('Y-m-d H:i:s'),
+        'level' => 'info',
+        'message' => 'Runner exception',
+        'context' => [
+            'type' => 'error',
+            'data' => [
+                'msg' => $e->getMessage(),
+                'trace' => $e->getTraceAsString(),
+            ],
+        ]
+    ];
+    print json_encode($output);
     exit(1);
 }
 try {
     /** @var \Violinist\NeedsUpdateCheckRunner\NeedsUpdateResult $result */
     $result = $runner->run($update_check_data);
     if ($result->needsUpdate()) {
-        $output = [];
         foreach ($runner->getMessages() as $message) {
             $output[] = $message;
         }
@@ -61,9 +73,22 @@ try {
                 'package' => $result->getPackage(),
             ]
         ];
-        print json_encode($output);
     }
+    print json_encode($output);
 }
 catch (Throwable $e) {
+    $output[] = [
+        'timestamp' => date('Y-m-d H:i:s'),
+        'level' => 'info',
+        'message' => 'Runner exception',
+        'context' => [
+            'type' => 'error',
+            'data' => [
+                'msg' => $e->getMessage(),
+                'trace' => $e->getTraceAsString(),
+            ],
+        ]
+    ];
+    print json_encode($output);
     exit(1);
 }
