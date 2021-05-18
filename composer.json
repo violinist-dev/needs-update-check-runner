@@ -1,10 +1,8 @@
 {
   "name": "violinist-dev/needs-update-check-runner",
   "description": "To check if a project needs update, in some way.",
-  "autoload": {
-    "psr-4": {
-      "Violinist\\NeedsUpdateCheckRunner\\": "src"
-    }
+  "autoload-dev": {
+    "psr-4": { "Violinist\\NeedsUpdateCheckRunner\\Tests\\": "tests/"}
   },
   "config": {
     "platform": {
@@ -26,6 +24,7 @@
     "test": "./vendor/bin/phpunit"
   },
   "require-dev": {
-    "phpunit/phpunit": "^6.5"
+    "phpunit/phpunit": "^6.5",
+    "phpstan/phpstan": "^0.12.88"
   }
 }

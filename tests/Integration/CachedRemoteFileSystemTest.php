@@ -6,17 +6,8 @@ use PHPUnit\Framework\TestCase;
 use Symfony\Component\Dotenv\Dotenv;
 use Symfony\Component\Process\Process;
 
-class CachedRemoteFileSystemTest extends TestCase {
-
-    public function setUp()
-    {
-        try {
-            $env = new Dotenv();
-            $env->load(__DIR__ . '/../../.env');
-        } catch (\Throwable $e) {
-            // We tried.
-        }
-    }
+class CachedRemoteFileSystemTest extends IntegrationBase
+{
 
     public function testCached() {
         $our_dir = sprintf('%s/%s', sys_get_temp_dir(), uniqid('vnucr-test-', true));
