@@ -1,6 +1,11 @@
 {
   "name": "violinist-dev/needs-update-check-runner",
   "description": "To check if a project needs update, in some way.",
+  "autoload": {
+    "psr-4": {
+      "Violinist\\NeedsUpdateCheckRunner\\": "src"
+    }
+  },
   "autoload-dev": {
     "psr-4": { "Violinist\\NeedsUpdateCheckRunner\\Tests\\": "tests/"}
   },
