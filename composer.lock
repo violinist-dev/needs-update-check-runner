@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ef78f6e2290315a25590d35573b99732",
+    "content-hash": "09bef1a78a519b0f9a5911576965f3e3",
     "packages": [
         {
             "name": "clue/stream-filter",
@@ -187,6 +187,10 @@
                 "rest",
                 "web service"
             ],
+            "support": {
+                "issues": "https://github.com/guzzle/guzzle/issues",
+                "source": "https://github.com/guzzle/guzzle/tree/6.5"
+            },
             "time": "2020-06-16T21:01:06+00:00"
         },
         {
@@ -238,6 +242,10 @@
             "keywords": [
                 "promise"
             ],
+            "support": {
+                "issues": "https://github.com/guzzle/promises/issues",
+                "source": "https://github.com/guzzle/promises/tree/1.4.1"
+            },
             "time": "2021-03-07T09:25:29+00:00"
         },
         {
@@ -460,6 +468,10 @@
                 "api",
                 "gitlab"
             ],
+            "support": {
+                "issues": "https://github.com/GitLabPHP/Client/issues",
+                "source": "https://github.com/GitLabPHP/Client/tree/9.19.2"
+            },
             "funding": [
                 {
                     "url": "https://github.com/GrahamCampbell",
@@ -773,6 +785,10 @@
                 "Guzzle",
                 "http"
             ],
+            "support": {
+                "issues": "https://github.com/php-http/guzzle6-adapter/issues",
+                "source": "https://github.com/php-http/guzzle6-adapter/tree/master"
+            },
             "time": "2016-05-10T06:13:32+00:00"
         },
         {
@@ -1484,6 +1500,10 @@
                 }
             ],
             "description": "A polyfill for getallheaders.",
+            "support": {
+                "issues": "https://github.com/ralouphie/getallheaders/issues",
+                "source": "https://github.com/ralouphie/getallheaders/tree/develop"
+            },
             "time": "2019-03-08T08:55:37+00:00"
         },
         {
@@ -1549,6 +1569,9 @@
                 "caching",
                 "psr6"
             ],
+            "support": {
+                "source": "https://github.com/symfony/cache/tree/v3.4.47"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -1629,6 +1652,9 @@
             ],
             "description": "Symfony DependencyInjection Component",
             "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/dependency-injection/tree/v3.4.47"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -1695,6 +1721,9 @@
                 "env",
                 "environment"
             ],
+            "support": {
+                "source": "https://github.com/symfony/dotenv/tree/v3.4.47"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -1835,6 +1864,9 @@
                 "portable",
                 "shim"
             ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-apcu/tree/v1.19.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -2261,6 +2293,7 @@
             "require-dev": {
                 "composer/composer": "dev-master"
             },
+            "default-branch": true,
             "type": "composer-plugin",
             "extra": {
                 "class": "Violinist\\CachedRemoteFilesystem\\EventSubscriber"
@@ -2281,6 +2314,10 @@
                 }
             ],
             "description": "Wrap the remote filesystem with a cache",
+            "support": {
+                "issues": "https://github.com/violinist-dev/composer-cached-remote-filesystem/issues",
+                "source": "https://github.com/violinist-dev/composer-cached-remote-filesystem/tree/master"
+            },
             "time": "2021-05-11T05:48:27+00:00"
         },
         {
@@ -2298,11 +2335,12 @@
                 "shasum": ""
             },
             "require": {
-                "knplabs/github-api": "^2.11.0",
+                "knplabs/github-api": "^2.15.0",
                 "m4tthumphrey/php-gitlab-api": "^9.17.1",
                 "php-http/guzzle6-adapter": "^1.1",
                 "violinist-dev/slug-from-url": "^1.2"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -2320,6 +2358,10 @@
                 }
             ],
             "description": "A provider factory to get providers based on URLs and Repo Slugs",
+            "support": {
+                "issues": "https://github.com/violinist-dev/provider-factory/issues",
+                "source": "https://github.com/violinist-dev/provider-factory/tree/main"
+            },
             "time": "2021-04-06T18:24:16+00:00"
         },
         {
@@ -2361,6 +2403,10 @@
                 }
             ],
             "description": "Get a slug from a URL",
+            "support": {
+                "issues": "https://github.com/violinist-dev/slug-from-url/issues",
+                "source": "https://github.com/violinist-dev/slug-from-url/tree/1.2.1"
+            },
             "time": "2019-05-16T13:52:59+00:00"
         },
         {
@@ -2377,6 +2423,7 @@
                 "reference": "1f17ba5e8e33e8f1f862f3b7278990459cd5713d",
                 "shasum": ""
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -2394,6 +2441,10 @@
                 }
             ],
             "description": "Value objects",
+            "support": {
+                "issues": "https://github.com/violinist-dev/update-check-data/issues",
+                "source": "https://github.com/violinist-dev/update-check-data/tree/main"
+            },
             "time": "2021-05-06T18:34:49+00:00"
         },
         {
@@ -2441,6 +2492,10 @@
                 "logger",
                 "psr-3"
             ],
+            "support": {
+                "issues": "https://github.com/wasinger/simplelogger/issues",
+                "source": "https://github.com/wasinger/simplelogger/tree/master"
+            },
             "time": "2018-03-07T17:10:45+00:00"
         }
     ],
@@ -2891,6 +2946,66 @@
                 "source": "https://github.com/phpspec/prophecy/tree/v1.10.3"
             },
             "time": "2020-03-05T15:02:03+00:00"
+        },
+        {
+            "name": "phpstan/phpstan",
+            "version": "0.12.88",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpstan/phpstan.git",
+                "reference": "464d1a81af49409c41074aa6640ed0c4cbd9bb68"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/464d1a81af49409c41074aa6640ed0c4cbd9bb68",
+                "reference": "464d1a81af49409c41074aa6640ed0c4cbd9bb68",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1|^8.0"
+            },
+            "conflict": {
+                "phpstan/phpstan-shim": "*"
+            },
+            "bin": [
+                "phpstan",
+                "phpstan.phar"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.12-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "PHPStan - PHP Static Analysis Tool",
+            "support": {
+                "issues": "https://github.com/phpstan/phpstan/issues",
+                "source": "https://github.com/phpstan/phpstan/tree/0.12.88"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/ondrejmirtes",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/phpstan",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/phpstan/phpstan",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-05-17T12:24:49+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",

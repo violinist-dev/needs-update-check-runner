@@ -7,6 +7,9 @@ jobs:
   test:
     name: Run tests
     runs-on: 'ubuntu-20.04'
+    env:
+      PRIVATE_REPO_GITHUB: ${{ secrets.PRIVATE_REPO_GITHUB }}
+      PRIVATE_USER_TOKEN_GITHUB: ${{ secrets.PRIVATE_USER_TOKEN_GITHUB }}
     strategy:
       fail-fast: false
       matrix:
