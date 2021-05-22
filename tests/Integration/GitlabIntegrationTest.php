@@ -6,7 +6,7 @@ use Violinist\UpdateCheckData\UpdateCheckData;
 
 class GitlabIntegrationTest extends IntegrationBase
 {
-    public function testGithubEmptyKnown()
+    public function testGitlabEmptyKnown()
     {
         $url = getenv('PRIVATE_REPO_GITLAB');
         $token = getenv('PRIVATE_USER_TOKEN_GITLAB');
