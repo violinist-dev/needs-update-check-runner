@@ -10,6 +10,8 @@ jobs:
     env:
       PRIVATE_REPO_GITHUB: ${{ secrets.PRIVATE_REPO_GITHUB }}
       PRIVATE_USER_TOKEN_GITHUB: ${{ secrets.PRIVATE_USER_TOKEN_GITHUB }}
+      PRIVATE_REPO_GITLAB: ${{ secrets.PRIVATE_REPO_GITLAB }}
+      PRIVATE_USER_TOKEN_GITLAB: ${{ secrets.PRIVATE_USER_TOKEN_GITLAB }}
     strategy:
       fail-fast: false
       matrix:
