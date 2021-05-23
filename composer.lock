@@ -4,8 +4,80 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "09bef1a78a519b0f9a5911576965f3e3",
+    "content-hash": "8508eb26df5a0c98c9ffab7fdec67ecc",
     "packages": [
+        {
+            "name": "bitbucket/client",
+            "version": "v2.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/BitbucketPHP/Client.git",
+                "reference": "93b00424ed886a06497cb164db774208b0c5a4c2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/BitbucketPHP/Client/zipball/93b00424ed886a06497cb164db774208b0c5a4c2",
+                "reference": "93b00424ed886a06497cb164db774208b0c5a4c2",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3",
+                "php-http/cache-plugin": "^1.6",
+                "php-http/client-common": "^1.9|^2.0",
+                "php-http/client-implementation": "^1.0",
+                "php-http/discovery": "^1.6",
+                "php-http/httplug": "^1.1|^2.0",
+                "php-http/multipart-stream-builder": "^1.0",
+                "psr/cache": "^1.0",
+                "psr/http-message": "^1.0"
+            },
+            "require-dev": {
+                "graham-campbell/analyzer": "^2.4",
+                "php-http/guzzle6-adapter": "^1.1|^2.0",
+                "phpunit/phpunit": "^7.5|^8.5|^9.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Bitbucket\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Graham Campbell",
+                    "email": "graham@alt-three.com"
+                }
+            ],
+            "description": "A Modern Bitbucket API 2.0 Client",
+            "keywords": [
+                "Bitbucket API",
+                "Bitbucket API Client",
+                "Bitbucket Client",
+                "BitbucketAPI",
+                "Graham Campbell",
+                "GrahamCampbell",
+                "bitbucket"
+            ],
+            "support": {
+                "issues": "https://github.com/BitbucketPHP/Client/issues",
+                "source": "https://github.com/BitbucketPHP/Client/tree/v2.1.5"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/GrahamCampbell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/bitbucket/client",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-06-29T18:54:45+00:00"
+        },
         {
             "name": "clue/stream-filter",
             "version": "v1.5.0",
@@ -1814,25 +1886,25 @@
         },
         {
             "name": "symfony/polyfill-apcu",
-            "version": "v1.19.0",
+            "version": "v1.22.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-apcu.git",
-                "reference": "b44b51e7814c23bfbd793a16ead5d7ce43ed23c5"
+                "reference": "bc9974e74f8c05f4ceb500b1e0603e36be7d8223"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-apcu/zipball/b44b51e7814c23bfbd793a16ead5d7ce43ed23c5",
-                "reference": "b44b51e7814c23bfbd793a16ead5d7ce43ed23c5",
+                "url": "https://api.github.com/repos/symfony/polyfill-apcu/zipball/bc9974e74f8c05f4ceb500b1e0603e36be7d8223",
+                "reference": "bc9974e74f8c05f4ceb500b1e0603e36be7d8223",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": ">=7.1"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "1.19-dev"
+                    "dev-main": "1.22-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -1871,7 +1943,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-apcu/tree/v1.19.0"
+                "source": "https://github.com/symfony/polyfill-apcu/tree/v1.22.1"
             },
             "funding": [
                 {
@@ -1887,7 +1959,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-21T09:57:48+00:00"
+            "time": "2021-01-22T09:19:47+00:00"
         },
         {
             "name": "symfony/polyfill-intl-idn",
@@ -2218,7 +2290,6 @@
             "require-dev": {
                 "composer/composer": "dev-master"
             },
-            "default-branch": true,
             "type": "composer-plugin",
             "extra": {
                 "class": "Violinist\\CachedRemoteFilesystem\\EventSubscriber"
@@ -2239,10 +2310,6 @@
                 }
             ],
             "description": "Wrap the remote filesystem with a cache",
-            "support": {
-                "issues": "https://github.com/violinist-dev/composer-cached-remote-filesystem/issues",
-                "source": "https://github.com/violinist-dev/composer-cached-remote-filesystem/tree/master"
-            },
             "time": "2021-05-11T05:48:27+00:00"
         },
         {
@@ -2251,15 +2318,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/violinist-dev/provider-factory.git",
-                "reference": "10fa103f0ce42df81dff9fb662e67ec6696a89af"
+                "reference": "10c9429fea7c111c3bc042fed9d8ad13cc0dd9e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/violinist-dev/provider-factory/zipball/10fa103f0ce42df81dff9fb662e67ec6696a89af",
-                "reference": "10fa103f0ce42df81dff9fb662e67ec6696a89af",
+                "url": "https://api.github.com/repos/violinist-dev/provider-factory/zipball/10c9429fea7c111c3bc042fed9d8ad13cc0dd9e9",
+                "reference": "10c9429fea7c111c3bc042fed9d8ad13cc0dd9e9",
                 "shasum": ""
             },
             "require": {
+                "bitbucket/client": "^2",
                 "knplabs/github-api": "^2.15.0",
                 "m4tthumphrey/php-gitlab-api": "^9.17.1",
                 "php-http/guzzle6-adapter": "^1.1",
@@ -2287,7 +2355,7 @@
                 "issues": "https://github.com/violinist-dev/provider-factory/issues",
                 "source": "https://github.com/violinist-dev/provider-factory/tree/main"
             },
-            "time": "2021-05-22T19:48:49+00:00"
+            "time": "2021-05-22T21:04:40+00:00"
         },
         {
             "name": "violinist-dev/slug-from-url",
@@ -2348,7 +2416,6 @@
                 "reference": "1f17ba5e8e33e8f1f862f3b7278990459cd5713d",
                 "shasum": ""
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -2484,6 +2551,72 @@
             "time": "2015-06-14T21:17:01+00:00"
         },
         {
+            "name": "league/oauth2-client",
+            "version": "2.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/oauth2-client.git",
+                "reference": "badb01e62383430706433191b82506b6df24ad98"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/oauth2-client/zipball/badb01e62383430706433191b82506b6df24ad98",
+                "reference": "badb01e62383430706433191b82506b6df24ad98",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.0 || ^7.0",
+                "paragonie/random_compat": "^1 || ^2 || ^9.99",
+                "php": "^5.6 || ^7.0 || ^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.3",
+                "php-parallel-lint/php-parallel-lint": "^1.2",
+                "phpunit/phpunit": "^5.7 || ^6.0 || ^9.3",
+                "squizlabs/php_codesniffer": "^2.3 || ^3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\OAuth2\\Client\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Bilbie",
+                    "email": "hello@alexbilbie.com",
+                    "homepage": "http://www.alexbilbie.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Woody Gilk",
+                    "homepage": "https://github.com/shadowhand",
+                    "role": "Contributor"
+                }
+            ],
+            "description": "OAuth 2.0 Client Library",
+            "keywords": [
+                "Authentication",
+                "SSO",
+                "authorization",
+                "identity",
+                "idp",
+                "oauth",
+                "oauth2",
+                "single sign on"
+            ],
+            "time": "2020-10-28T02:03:40+00:00"
+        },
+        {
             "name": "myclabs/deep-copy",
             "version": "1.7.0",
             "source": {
@@ -2531,6 +2664,56 @@
                 "source": "https://github.com/myclabs/DeepCopy/tree/1.x"
             },
             "time": "2017-10-19T19:58:43+00:00"
+        },
+        {
+            "name": "paragonie/random_compat",
+            "version": "v9.99.100",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/paragonie/random_compat.git",
+                "reference": "996434e5492cb4c3edcb9168db6fbb1359ef965a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/996434e5492cb4c3edcb9168db6fbb1359ef965a",
+                "reference": "996434e5492cb4c3edcb9168db6fbb1359ef965a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 7"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*|5.*",
+                "vimeo/psalm": "^1"
+            },
+            "suggest": {
+                "ext-libsodium": "Provides a modern crypto API that can be used to generate random bytes."
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Paragon Initiative Enterprises",
+                    "email": "security@paragonie.com",
+                    "homepage": "https://paragonie.com"
+                }
+            ],
+            "description": "PHP 5.x polyfill for random_bytes() and random_int() from PHP 7",
+            "keywords": [
+                "csprng",
+                "polyfill",
+                "pseudorandom",
+                "random"
+            ],
+            "support": {
+                "email": "info@paragonie.com",
+                "issues": "https://github.com/paragonie/random_compat/issues",
+                "source": "https://github.com/paragonie/random_compat"
+            },
+            "time": "2020-10-15T08:29:30+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -3987,6 +4170,61 @@
                 "source": "https://github.com/sebastianbergmann/version/tree/master"
             },
             "time": "2016-10-03T07:35:21+00:00"
+        },
+        {
+            "name": "stevenmaguire/oauth2-bitbucket",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stevenmaguire/oauth2-bitbucket.git",
+                "reference": "7ab903e7ac47b3fb18ff27fe5b7c8d2a494bd39c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stevenmaguire/oauth2-bitbucket/zipball/7ab903e7ac47b3fb18ff27fe5b7c8d2a494bd39c",
+                "reference": "7ab903e7ac47b3fb18ff27fe5b7c8d2a494bd39c",
+                "shasum": ""
+            },
+            "require": {
+                "league/oauth2-client": "^2.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Stevenmaguire\\OAuth2\\Client\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Steven Maguire",
+                    "email": "stevenmaguire@gmail.com",
+                    "homepage": "https://github.com/stevenmaguire"
+                }
+            ],
+            "description": "Bitbucket OAuth 2.0 Client Provider for The PHP League OAuth2-Client",
+            "keywords": [
+                "authorisation",
+                "authorization",
+                "bitbucket",
+                "client",
+                "oauth",
+                "oauth2"
+            ],
+            "time": "2018-05-03T22:50:12+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
